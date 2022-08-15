@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
+input{
+    padding: 0;
+    border-radius: 0.6rem;
+    width: 20rem;
+    font-size: 1.2rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input:focus{
+    background-color: rgb(214, 102, 32);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1{
+    text-align: center;
+    font-size: 3rem;
+    color: red;
+    background-color: black;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+   
+    
+}
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

@@ -49,7 +49,7 @@ function App() {
   return <>
      <h1> World Country Information</h1>
      <Search onSearch={handleSearch}/>
-     {isLoading && <h2 style={{textAlign:"center"}}>data is loding please watting </h2>}
+     {isLoading && <h2 style={{textAlign:"center"}}>data is loading please wait </h2>}
      {error && <h>{error.message}</h>}
      {countries && <Countries countries={filterCountries} onRemoveCountry={handleRemoveCountry}/>}
      
